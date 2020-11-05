@@ -14,11 +14,11 @@ function App() {
 	<Router>
 		<Navbar></Navbar>
         <Switch>
-            <Route path='/' component={About} />
-            <Route path='game' component={Game}/>
-            <Route path='resume' component={Resume}/>
-            <Route path='projects' component={Projects}/>
-            <Route path='contact' component={Contact}/>
+            <Route path='/' exact component={About} />
+            <Route path='/Game' component={Game}/>
+            <Route path='/Resume' component={Resume}/>
+            <Route path='/Projects' component={Projects}/>
+            <Route path='/Contact' component={Contact}/>
         </Switch>
     </Router>
 	)
