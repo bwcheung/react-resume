@@ -95,7 +95,7 @@ export default class Resume extends Component {
     		<div id="featured">
     			<div className="title">
     				<h2>Oasis Engineering</h2>
-    				<span> Engineer Assistant | July - August 2015 </span>
+    				<span> Engineer Assistant | July - August 2016 </span>
     			</div>
     			<p>     • Assisted the Engineer in property survey for houses across Edmonton.<br/>
     		    • Safely handled with surveying equipment to make precise measurements to determine property boundaries.<br/>
