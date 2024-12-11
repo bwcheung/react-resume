@@ -59,7 +59,7 @@ export default class Resume extends Component {
 				<div id="banner">
 				
 				</div>
-				<div id="welcome">
+				<div id="featured">
 					<div className="title">
 						<h2>Stormboard</h2>
 						<span> Junior - Intermediate Software Developer (JAVASCRIPT, HTML, CSS, PHP, MYSQL) | Novemebr 2020 - December 2024  </span>

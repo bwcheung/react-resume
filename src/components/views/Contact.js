@@ -4,7 +4,7 @@ import React, { Component } from "react";
 export default class Resume extends Component {
   render() {
     return (
-    	<div id="page" className="container">
+    	<div id="page" className="container contact-us">
 
     	<div id="header">
     		<div id="logo">
