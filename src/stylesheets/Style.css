@@ -59,6 +59,11 @@ div {
 	display: block;
 }
 
+#resume-game {
+	display: flex;
+	justify-content: center;
+}
+
 #Instructions {
 	position: absolute;
 	bottom: 0;

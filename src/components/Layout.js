@@ -314,7 +314,7 @@ export default class Layout extends React.Component {
 		}
 		
 	    return (
-	     <div>
+	     <div id="resume-game">
 	     	<canvas ref="canvas" id = "background"
 	     		width = {this.state.screen.width * this.state.screen.ratio}
 	     		height = {this.state.screen.height * this.state.screen.ratio} 	 
