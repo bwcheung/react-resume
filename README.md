@@ -8,7 +8,7 @@ Email me at bwcheung8@gmail.com.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 # How to run 
-Visit https://react-resume-v5uj.onrender.com/game
+Visit https://react-resume-v5uj.onrender.com/
 Note: Due to using a free hosting service the webpage can take up to a few minutes to load, but after the first load, subsequent loads will be much faster.
 
 (Use FireFox or Chrome browser)
