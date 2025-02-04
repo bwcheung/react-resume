@@ -1,10 +1,11 @@
 import React, { Component } from "react";
-
+import Navbar from "../Navbar.js"
 
 export default class About extends Component {
   render() {
     return (
-    	<div id="page" className="container">
+    	<div id="page">
+		<Navbar></Navbar>
     	<div id="header">
     		<div id="logo">
     			<img alt="" src="https://raw.githubusercontent.com/bwcheung/resume/master/pics/20181129_224920.jpg" />
@@ -23,7 +24,7 @@ export default class About extends Component {
     		</ul>
     	</div>
     	<div id="main">
-    		<div id="welcome">
+    		<div id="featured">
     			<div className="title">
     				<h2>Introduction</h2>
     			</div>

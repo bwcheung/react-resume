@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Menuitems } from "./Menuitems";
 
-import "./Navbar.css";
+import "../stylesheets/Navbar.css";
 
 class Navbar extends Component {
 
@@ -13,7 +13,7 @@ class Navbar extends Component {
 
     render() {
         return(
-            <nav className="NavbarItems">
+            <nav className="navbar">
                 <ul className={this.state.clicked ? "nav-menu active": "nav-menu"}>
                     {Menuitems.map((item, index) => {
                         return (

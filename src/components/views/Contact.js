@@ -1,11 +1,12 @@
 import React, { Component } from "react";
+import Navbar from "../Navbar.js"
 
 
 export default class Resume extends Component {
   render() {
     return (
-    	<div id="page" className="container contact-us">
-
+    	<div id="page" className="contact-us">
+		<Navbar></Navbar>
     	<div id="header">
     		<div id="logo">
     			<img alt="" src="https://raw.githubusercontent.com/bwcheung/resume/master/pics/20181129_224920.jpg" />
@@ -21,7 +22,7 @@ export default class Resume extends Component {
     		<div id="logo2">
     		<img alt="" src="https://raw.githubusercontent.com/bwcheung/resume/master/pics/281769.jpg" />
     		</div>
-    		<div id="welcome">
+    		<div id="featured">
     			<p>bwcheung8@gmail.com</p>
     		</div>
     		

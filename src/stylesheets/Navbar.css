@@ -1,0 +1,29 @@
+.navbar
+{
+    position: absolute;
+    border-bottom: 1px solid black;
+    height: 40px;
+    z-index: 1;
+    left: 17%;
+    background-color: #444444;
+    width: 100%;
+    margin-left: 3px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 128px;
+    list-style: none;
+    width: 100%;
+    margin-right: 2rem;
+}
+
+.nav-links {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.nav-links-mobile {
+    display: none;
+}
