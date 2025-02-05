@@ -143,7 +143,7 @@ export default class Layout extends React.Component {
 		});
 		
 		this.enemy = new enemy({
-			position: 10,
+			positionY: 10,
 			moveDown: true,
 			texts: this.addText.bind(this),
 			health: 15,
@@ -183,9 +183,9 @@ export default class Layout extends React.Component {
 			this.createClouds();
 		}
 		
-		if (this.enemy.position >= this.state.screen.height-200) {
+		if (this.enemy.positionY >= this.state.screen.height-200) {
 			this.enemy.moveDown = false;
-		} else if (this.enemy.position <= 0) {
+		} else if (this.enemy.positionY <= 0) {
 			this.enemy.moveDown = true;
 		}
 		
@@ -201,14 +201,14 @@ export default class Layout extends React.Component {
 		this.updateClouds(this.clouds);
 	}
 	
-	
-	
 	checkHit() {
 		for (let x of this.bullets) {
-			if ((x.positionX >= this.state.screen.width-400) &&
-				(x.positionX <= this.state.screen.width-300) &&
-				(x.positionY >= this.enemy.position-100) && 
-				(x.positionY <= this.enemy.position+110)) {
+			const bulletX = x.positionX * this.state.ratioX
+			const bulletY = x.positionY * this.state.ratioY
+			if ((bulletX >= this.state.screen.width-400) &&
+				(bulletX <= this.state.screen.width-300) &&
+				(bulletY >= this.enemy.positionY) && 
+				(bulletY <= this.enemy.positionY+200)) {
 				x.delete = true;
 				this.enemy.health -= 1;
 			}
@@ -289,6 +289,14 @@ export default class Layout extends React.Component {
 		this.setState({gameStart: true}, () => {
 			this.gameLoop();
 		});
+		const canvasWidth2 = this.state.context2.canvas.width
+		const canvasWidth = this.state.context.canvas.width
+
+		const canvasHeight2 = this.state.context2.canvas.height
+		const canvasHeight = this.state.context.canvas.height
+
+		this.state.ratioX = canvasWidth / canvasWidth2
+		this.state.ratioY = canvasHeight / canvasHeight2
 	}
 	
 	render (){

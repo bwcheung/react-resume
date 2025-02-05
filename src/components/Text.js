@@ -1,7 +1,7 @@
 export default class Text {
 	constructor(args) {
 		this.positionX = args.positionX;
-		this.positionY = args.enemy.position;
+		this.positionY = args.enemy.positionY;
 		this.string = args.string;
 		this.colour = args.colour;
 	}

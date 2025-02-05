@@ -9,7 +9,7 @@ const strings2 = ["MOTIVATED!!", "PASSIONATE!", "CONSIDERATE", "DEPENDABLE", "HA
 
 export default class enemy {
 	constructor(args) {
-		this.position = args.position;
+		this.positionY = args.positionY;
 		this.moveDown = args.moveDown;
 		this.texts = args.texts;
 		this.health = args.health;
@@ -21,11 +21,11 @@ export default class enemy {
 		var x;
 	
 		if (this.moveDown) {
-			this.position += 3;
+			this.positionY += 3;
 		}
 		
 		if (!this.moveDown) {
-			this.position -= 3;
+			this.positionY -= 3;
 		}
 		
 		if (state.gameStart && !state.endGame) {
@@ -57,7 +57,7 @@ export default class enemy {
 		const context = state.context;
 		
 		context.save();
-		context.translate(state.screen.width-700,this.position);
+		context.translate(state.screen.width-700,this.positionY);
 		context.font = "bold 12pt Calibri";
 		context.fillStyle = "black";
 		context.textAlign = "center";
