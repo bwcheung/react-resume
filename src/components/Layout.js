@@ -168,7 +168,6 @@ export default class Layout extends React.Component {
 		ctx.canvas.height = this.state.screen.height;
 		
 		const my_gradient=ctx.createLinearGradient(150,0,150,this.state.screen.height);
-		console.log(this.state.screen.width)
 		
 		my_gradient.addColorStop(0.000, 'rgba(5, 121, 175, 1.000)');
 		my_gradient.addColorStop(0.554, 'rgba(70, 207, 244, 1.000)');
@@ -279,7 +278,7 @@ export default class Layout extends React.Component {
 				this.bullets.splice(index,1);
 			} else {
 				x.render(this.state);
-				x.positionX = x.positionX + 10;
+				x.positionX = x.positionX + 20;
 			}
 			index++;
 		}
