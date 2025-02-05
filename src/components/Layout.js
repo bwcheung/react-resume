@@ -67,7 +67,7 @@ export default class Layout extends React.Component {
         		keys.esc = value; break;
         		
         	 default:
-                keys = String.fromCharCode(e.keyCode);
+				break
         }
         
         this.setState({ keys:keys });
@@ -168,6 +168,7 @@ export default class Layout extends React.Component {
 		ctx.canvas.height = this.state.screen.height;
 		
 		const my_gradient=ctx.createLinearGradient(150,0,150,this.state.screen.height);
+		console.log(this.state.screen.width)
 		
 		my_gradient.addColorStop(0.000, 'rgba(5, 121, 175, 1.000)');
 		my_gradient.addColorStop(0.554, 'rgba(70, 207, 244, 1.000)');
@@ -176,8 +177,8 @@ export default class Layout extends React.Component {
 		
 		if (this.state.keys.esc) {
 			this.menu = true;
+			this.setState({gameStart: false})
 		}
-		
 		
 		if (this.clouds.length < 4) {
 			this.createClouds();
@@ -191,7 +192,6 @@ export default class Layout extends React.Component {
 		
 		this.update();
 		ctx.restore();	
-		  
 	}
 	
 	update() {

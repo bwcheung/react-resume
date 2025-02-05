@@ -4,7 +4,7 @@ import Text from "./Text"
 const strings = ["JAVASCRIPT 5/5", "JAVA 5/5", "PYTHON 5/5", "HTML 5/5", "CSS 5/5", "C 4/5", 
 	"C++ 2/5", "C# 2/5", "SQL 3/5", "PHP 2/5", "REACT? JUST LOOK AT THIS APP!"];
 
-const strings2 = ["MOTIVATED!!", "PASSIONATE!", "HANDSOME", "CONSIDERATE", "DEPENDABLE", "HARD WORKER", "FAST LEARNER",
+const strings2 = ["MOTIVATED!!", "PASSIONATE!", "CONSIDERATE", "DEPENDABLE", "HARD WORKER", "FAST LEARNER",
 				 "CRITICAL THINKING 5/5", "PROBLEM SOLVING 5/5"];
 
 export default class enemy {

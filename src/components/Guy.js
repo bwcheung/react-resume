@@ -64,8 +64,6 @@ export default class sprite {
         		this.frameIndex = 0;
         	}
     	}
-    	//ctx.clearRect(positionX ,positionY, width, height);
-    	
 		newImage.src = this.image;
 		newImage.onload = function () {
 			  ctx.drawImage(
