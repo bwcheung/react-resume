@@ -2,7 +2,7 @@
 {
     position: absolute;
     border-bottom: 1px solid black;
-    height: 40px;
+    height: auto;
     z-index: 1;
     left: 17%;
     background-color: #444444;
@@ -12,10 +12,15 @@
 
 .nav-menu {
     display: flex;
-    gap: 128px;
     list-style: none;
     width: 100%;
     margin-right: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+}
+
+.nav-menu li {
+    margin-right: 125px;
 }
 
 .nav-links {
