@@ -36,23 +36,23 @@ export default class sprite {
 		const ctx = state.context2;
 		
 		ctx.save();
-		ctx.clearRect(positionX ,positionY, width, height);
+		ctx.clearRect(positionX, positionY, width, height);
 		
 		if (!state.endGame && state.gameStart) {
-    		if (state.keys.right && (this.positionX < state.screen.width / 2)) {
-        		this.positionX += 10;
+    		if (state.keys.right && (this.positionX < state.context2.canvas.width / 2)) {
+        		this.positionX += 15;
         	}
         	
         	if (state.keys.up && (this.positionY > 0)) {
-        		this.positionY -= 10;
+        		this.positionY -= 15;
         	}
         	
-        	if (state.keys.down && (this.positionY < state.screen.height)) {
-        		this.positionY += 10;   		
+        	if (state.keys.down && (this.positionY < state.context2.canvas.height - 200)) {
+        		this.positionY += 15;   		
         	}
         	
         	if (state.keys.left && (this.positionX > 0)) {
-        		this.positionX -= 10;
+        		this.positionX -= 15;
         	}
         	
         	if ((state.keys.space) && (Date.now() - this.lastShot > 600)) { 	
