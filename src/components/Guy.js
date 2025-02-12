@@ -36,7 +36,7 @@ export default class sprite {
 		const ctx = state.context2;
 		
 		ctx.save();
-		ctx.clearRect(positionX, positionY, width, height);
+		ctx.clearRect(10, 10, state.context2.canvas.width, state.context2.canvas.height);
 		
 		if (!state.endGame && state.gameStart) {
     		if (state.keys.right && (this.positionX < state.context2.canvas.width / 2)) {
@@ -54,8 +54,14 @@ export default class sprite {
         	if (state.keys.left && (this.positionX > 0)) {
         		this.positionX -= 15;
         	}
+
+			if(state.guyMove){
+				console.log(state.guyMove)
+				this.positionX = state.guyPos.x + state.guyMove.x
+				this.positionY = state.guyPos.y + state.guyMove.y
+			}
         	
-        	if ((state.keys.space) && (Date.now() - this.lastShot > 600)) { 	
+        	if ((state.keys.space) && (Date.now() - this.lastShot > 600)) {
         		this.frameIndex = 1;
         		const bullet = new Bullet({guy:this});
         		this.bullets(bullet);

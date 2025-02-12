@@ -76,13 +76,32 @@ export default class Layout extends React.Component {
 	hanleTouchStart(evt) {
 		let keys = this.state.keys;
 		keys.space = true;
-		this.setState( { keys:keys })
+		this.setState( { 
+			keys:keys, 
+			guyPos: {
+				x: this.guy.positionX,
+				y: this.guy.positionY
+			},
+			originalMousePos: {
+				x: evt.touches[0].clientX,
+				y: evt.touches[0].clientY
+			}
+		})
+	}
+
+	handleTouchMove(evt){
+		this.setState( {
+			guyMove: {
+				x: evt.touches[0].clientX - this.state.originalMousePos.x,
+				y: evt.touches[0].clientY - this.state.originalMousePos.y
+			}
+		})
 	}
 	
 	hanleTouchEnd(evt) {
 		let keys = this.state.keys;
 		keys.space = false;
-		this.setState( { keys:keys })
+		this.setState( { keys:keys, guyPos: null, originalMousePos: null , guyMove: null})
 	}
 	
 	
@@ -95,6 +114,7 @@ export default class Layout extends React.Component {
 		const ctx2 = this.refs.canvas2.getContext("2d");
 		
 		window.addEventListener('touchstart', this.hanleTouchStart.bind(this), false);
+		window.addEventListener('touchmove', this.handleTouchMove.bind(this), false);
 		window.addEventListener('touchend', this.hanleTouchEnd.bind(this), false);
 		
 		this.initialize();	
