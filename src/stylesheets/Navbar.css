@@ -1,10 +1,9 @@
 .navbar
 {
-    position: absolute;
+    position: relative;
     border-bottom: 1px solid black;
     height: auto;
     z-index: 1;
-    left: 17%;
     background-color: #444444;
     width: 100%;
 }
@@ -19,7 +18,7 @@
 }
 
 .nav-menu li {
-    margin-right: 125px;
+    margin-right: 90px;
 }
 
 .nav-links {
