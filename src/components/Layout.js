@@ -112,6 +112,8 @@ export default class Layout extends React.Component {
 		
 		const ctx = this.refs.canvas.getContext("2d");
 		const ctx2 = this.refs.canvas2.getContext("2d");
+		document.getElementById("app").classList.add("game")
+
 		
 		window.addEventListener('touchstart', this.hanleTouchStart.bind(this), false);
 		window.addEventListener('touchmove', this.handleTouchMove.bind(this), false);
@@ -136,6 +138,8 @@ export default class Layout extends React.Component {
 		window.removeEventListener('resize', this.handleResize);
 		window.removeEventListener('touchstart', this.hanleTouchStart);
 		window.removeEventListener('touchend', this.hanleTouchEnd);
+		window.removeEventListener('touchmove', this.hanleTouchEnd);
+		document.getElementById("app").classList.remove("game")
 	}
 	
 	handleResize(value, e){

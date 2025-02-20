@@ -192,6 +192,11 @@
 		overflow: hidden;
 	}
 
+	.game
+	{
+		touch-action: none;
+	}
+
 	#page
 	{
 		display: flex;
