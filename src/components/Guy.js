@@ -36,7 +36,7 @@ export default class sprite {
 		const ctx = state.context2;
 		
 		ctx.save();
-		ctx.clearRect(10, 10, state.context2.canvas.width, state.context2.canvas.height);
+		ctx.clearRect(0, 0, state.context2.canvas.width, state.context2.canvas.height);
 		
 		if (!state.endGame && state.gameStart) {
     		if (state.keys.right && (this.positionX < state.context2.canvas.width / 2)) {
