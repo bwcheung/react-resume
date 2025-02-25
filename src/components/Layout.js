@@ -90,6 +90,9 @@ export default class Layout extends React.Component {
 	}
 
 	handleTouchMove(evt){
+		if(!this.state.originalMousePos || !this.state.originalMousePos.x){
+			return
+		}
 		this.setState( {
 			guyMove: {
 				x: evt.touches[0].clientX - this.state.originalMousePos.x,
