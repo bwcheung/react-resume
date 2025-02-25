@@ -322,6 +322,14 @@ export default class Layout extends React.Component {
 		this.state.ratioX = canvasWidth / canvasWidth2
 		this.state.ratioY = canvasHeight / canvasHeight2
 	}
+
+	handleClick(e){
+		if(e.currentTarget.value === "play"){
+			window.location.reload()
+		}else if(e.currentTarget.value === "home"){
+			window.location.href = "/"
+		}
+	}
 	
 	render (){
 		let menuText;
@@ -332,15 +340,18 @@ export default class Layout extends React.Component {
 						<p className = "Menu"> Visit my 
 						<a href="https://github.com/bwcheung/ResumeGameProj"target="_blank" rel="noopener noreferrer">github</a> 
 						for more information.</p>
-						<button onClick = {this.startGame.bind(this)}>Start Game!!</button>
+						<button onClick = {this.startGame.bind(this)}>Start Game</button>
 		     			</div>)
 		}
 		
 		if (this.state.endGame) {
 			endGame = (<div id = "Menu">
-					   <p className = "End">Congratulations!! You have defeated my Resume. Your prize is the opportunity 
-					   	to hire the best person ever!!  </p>
-					   <p className = "End">You got hit {this.guy.gotHit} times. Try to get hit less next time!</p>
+					   	<p className = "End">Congratulations!! You have defeated my Resume. Thank you for playing my game!  </p>
+					   	<p className = "End">You got hit {this.guy.gotHit} times. Try to get hit less next time!</p>
+						<div class="game-btns">
+							<button onClick = {this.handleClick} value="play">Play Again</button>
+							<button onClick = {this.handleClick} value="home" >Back</button>
+						</div>
 					   </div>)
 		}
 		

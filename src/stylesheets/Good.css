@@ -197,6 +197,14 @@
 		touch-action: none;
 	}
 
+	.game-btns
+	{
+		display: flex;
+		position: relative;
+		left: -100px;
+		gap: 50px;
+	}
+
 	#page
 	{
 		display: flex;
