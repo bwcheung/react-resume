@@ -12,13 +12,10 @@
     display: flex;
     list-style: none;
     width: 100%;
-    margin-right: 2rem;
     flex-wrap: wrap;
     margin-bottom: 0;
-}
-
-.nav-menu li {
-    margin-right: 90px;
+    justify-content: center;
+    gap: 10%;
 }
 
 .nav-links {

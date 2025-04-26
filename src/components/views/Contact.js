@@ -9,13 +9,7 @@ export default class Resume extends Component {
     	<div id="header">
     		<div id="logo">
     			<img alt="" src="https://raw.githubusercontent.com/bwcheung/resume/master/pics/20181129_224920.jpg" />
-    			<h2>Brandon Cheung</h2>
-    			<span> Important Points </span>
     		</div>
-    		 
-    		<ul>
-      	
-    		</ul>
     	</div>
     	<div id="main">
 			<Navbar></Navbar>

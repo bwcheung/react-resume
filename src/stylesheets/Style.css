@@ -43,13 +43,16 @@ div {
 	position: absolute;
 	width: 100%;
 	bottom: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 p.Instructs {
 	text-align: center;
 }
 
-p.Menu {
+div.Menu {
 	font-family: "Times New Roman", Times, serif;
 	font-size: 25px;
 	letter-spacing: 4.8px;
@@ -58,25 +61,8 @@ p.Menu {
 	font-weight: 700;
 	text-decoration: none;
 	font-style: normal;
-	font-variant: small-caps;
 	text-transform: capitalize;
 	text-align: center;
-}
-
-
-p.End {
-	text-align: center;
-	font-family: "Comic Sans MS", cursive, sans-serif;
-	font-size: 24px;
-	letter-spacing: 4px;
-	word-spacing: 3px;
-	color: #FF0D22;
-	font-weight: 700;
-	text-decoration: none;
-	font-style: italic;
-	font-variant: normal;
-	text-transform: uppercase;
-	text-shadow: 3px 2px black;
 }
 
 
@@ -105,7 +91,8 @@ Button {
 	text-decoration:none;
 	text-shadow:0px 1px 0px #3d768a;
 	position: relative;
-	left:45%;
+	align-self: center;
+	top: 50px;
 }
 Button:hover {
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #407599), color-stop(1, #b35959));
@@ -116,8 +103,5 @@ Button:hover {
 	background:linear-gradient(to bottom, #407599 5%, #b35959 100%);
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#407599', endColorstr='#b35959',GradientType=0);
 	background-color:#407599;
-}
-Button:active {
-	position:relative;
-	top:1px;
+	align-self: center;
 }

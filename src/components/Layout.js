@@ -173,7 +173,7 @@ export default class Layout extends React.Component {
 			positionY: 10,
 			moveDown: true,
 			texts: this.addText.bind(this),
-			health: 15,
+			health: 5,
 		});
 		
 	}
@@ -334,23 +334,23 @@ export default class Layout extends React.Component {
 		}
 	}
 	
-	render (){
+	render(){
 		let menuText;
 		let endGame;
 		if (this.menu) {
 			menuText = (<div id = "Menu">
-						<p className = "Menu"> Hi! My name is Brandon Cheung and welcome to my interactive resume!</p>
-						<p className = "Menu"> Visit my 
+						<div className = "Menu"> Hi! My name is Brandon Cheung and welcome to my interactive resume!</div>
+						<div className = "Menu"> Visit my 
 						<a href="https://github.com/bwcheung/ResumeGameProj"target="_blank" rel="noopener noreferrer">github</a> 
-						for more information.</p>
+						for more information.</div>
 						<button onClick = {this.startGame.bind(this)}>Start Game</button>
 		     			</div>)
 		}
 		
 		if (this.state.endGame) {
 			endGame = (<div id = "Menu">
-					   	<p className = "End">Congratulations!! You have defeated my Resume. Thank you for playing my game!  </p>
-					   	<p className = "End">You got hit {this.guy.gotHit} times. Try to get hit less next time!</p>
+					   	<div className = "Menu">Congratulations!! You have defeated my Resume. Thank you for playing my game!  </div>
+					   	<div className = "Menu">You got hit {this.guy.gotHit} times. Try to get hit less next time!</div>
 						<div class="game-btns">
 							<button onClick = {this.handleClick} value="play">Play Again</button>
 							<button onClick = {this.handleClick} value="home" >Back</button>

@@ -112,7 +112,7 @@
 		padding: 1em 2em;
 	}
 
-	#header ul 
+	#header ul
 	{
 		list-style-type: circle;
 		font-weight: 700;
@@ -126,6 +126,13 @@
 		font-size: 1em;
 	}
 
+	@media only screen and (max-width: 750px) {
+		#header
+		{
+			display: none;
+		}
+	}
+
 /*********************************************************************************/
 /* Logo                                                                          */
 /*********************************************************************************/
@@ -133,7 +140,7 @@
 	#logo
 	{
 		text-align: center;
-		margin-bottom: 0em;
+		margin-bottom: 1em;
 	}
 	
 	#logo h2
@@ -201,8 +208,8 @@
 	{
 		display: flex;
 		position: relative;
-		left: -100px;
 		gap: 50px;
+		justify-content: center;
 	}
 
 	#page
@@ -229,7 +236,6 @@
 		border-top: 0px solid #2980b9;
 		text-align: center;
 		position: relative;
-		margin-top: 15px;
 	}
 
 	#content

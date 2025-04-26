@@ -8,18 +8,15 @@ export default class About extends Component {
     	<div id="header">
     		<div id="logo">
     			<img alt="" src="https://raw.githubusercontent.com/bwcheung/resume/master/pics/20181129_224920.jpg" />
-    			<h2>Brandon Cheung</h2>
-    			<span> Important Points </span>
     		</div>
-    		 
     		<ul>
-      	  <li>Diligent</li>
-      		<li>Fast Learner</li>
-      		<li>Genuine Interest in Computer Science</li>
+      	  		<li>Diligent</li>
+      			<li>Fast Learner</li>
+      			<li>Genuine Interest in Computer Science</li>
      			<li>Work Well With Others</li>
      			<li>Motivated</li>
      			<li>Critical Thinking</li>
-      		<li>Problem Solving</li>
+      			<li>Problem Solving</li>
     		</ul>
     	</div>
     	<div id="main">
