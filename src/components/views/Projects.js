@@ -59,6 +59,17 @@ export default class Resume extends Component {
 			<div id="content">
 				<div id="featured">
 					<div className="title">
+						<h2><a href="https://typ-off.com/"target="_blank" rel="noopener noreferrer">
+						Typing Game</a></h2>
+						<span>Frontend - REACT |  Backend - RUBY, NODEJS  |  Database - POSTGRESQL</span>
+					</div>
+					<p>A typing game that allows multiple players to battle it out with speed typing! A friend and I wanted to 
+						create a project together, so we collaborated to create this game. Our goal was to learn a new 
+						technology like Ruby while creating something that aligns with our interests.
+					</p>
+				</div>
+				<div id="featured">
+					<div className="title">
 						<h2><a href="https://github.com/Comput391-kchow3-bwcheung-yw2/C391Proj1"target="_blank" rel="noopener noreferrer">
 						Radiology Web App</a></h2>
 						<span>Frontend - HTML/JAVASCRIPT  |  Backend - PHP  |  Database - ORACLE</span>
