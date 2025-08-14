@@ -9,7 +9,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # How to run 
 Visit https://react-resume-v5uj.onrender.com/
-Note: Due to using a free hosting service the webpage can take up to a few minutes to load, but after the first load, subsequent loads will be much faster.
+Note: Due to using a free hosting service the webpage can take up to a several minutes to load, but after the first load, subsequent loads will be much faster.
 
 (Use FireFox or Chrome browser)
 
