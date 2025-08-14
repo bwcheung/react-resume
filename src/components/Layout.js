@@ -322,8 +322,10 @@ export default class Layout extends React.Component {
 		const canvasHeight2 = this.state.context2.canvas.height
 		const canvasHeight = this.state.context.canvas.height
 
-		this.state.ratioX = canvasWidth / canvasWidth2
-		this.state.ratioY = canvasHeight / canvasHeight2
+		this.setState({
+			ratioX: canvasWidth / canvasWidth2, 
+			ratioY: canvasHeight / canvasHeight2
+		})
 	}
 
 	handleClick(e){
