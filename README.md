@@ -9,14 +9,3 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # How to run 
 Edit: Visit [https://bwcheung.com/](https://bwcheung.com/) for a updated version
-
-(Use FireFox or Chrome browser)
-
-
-or
-
-
-(Warning may run differently on local server)
-1. npm install
-2. npm start
-3. Go to localhost:8080
