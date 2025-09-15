@@ -8,7 +8,7 @@ Email me at bwcheung8@gmail.com.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 # How to run 
-Visit [https://bwcheung.com/](https://bwcheung.com/)
+Edit: Visit [https://bwcheung.com/](https://bwcheung.com/) for a updated version
 Note: Due to using a free hosting service the webpage can take up to a several minutes to load, but after the first load, subsequent loads will be much faster.
 
 (Use FireFox or Chrome browser)
