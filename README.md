@@ -9,7 +9,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # How to run 
 Edit: Visit [https://bwcheung.com/](https://bwcheung.com/) for a updated version
-Note: Due to using a free hosting service the webpage can take up to a several minutes to load, but after the first load, subsequent loads will be much faster.
 
 (Use FireFox or Chrome browser)
 
