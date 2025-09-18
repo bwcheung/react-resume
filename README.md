@@ -8,4 +8,4 @@ Email me at bwcheung8@gmail.com.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 # How to run 
-Edit: Visit [https://bwcheung.com/](https://bwcheung.com/) for a updated version
+Edit: Visit [https://bwcheung.com/](https://bwcheung.com/) or [https://github.com/bwcheung/portfolio](https://github.com/bwcheung/portfolio) for a updated version
